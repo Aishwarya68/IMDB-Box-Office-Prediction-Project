@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    padding:180px 180px 50px 180px;
+}
+body{
+    background-color: lightgray;
+}
+button{
+
+    margin-left:500px;
+    margin-right: 500px;
+    padding: 20px;
+    color: blue;
+    border-radius: 10px;
+
+}
+button:hover{
+    color:rgb(1, 1, 8);
+    background-color: gray;
+}

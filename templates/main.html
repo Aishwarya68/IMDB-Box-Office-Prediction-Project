@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <title>IMDB Application</title>
+</head>
+<body>
+    <h1>Revenue Prediction Django Application</h1>
+
+    <!-- {% if result %}
+        <h1>Predicted Revenue of the Movie is {{result}} </h1>
+    {% endif %}  -->
+    <form action="{% url 'prediction'%}" method="post">
+        {% csrf_token %}
+        <div class="container">
+            <br>
+        <input id='movie_name' type = "text" name = "movie_name" placeholder="Movie Name" required><br><br>
+        <input id='duration' type = "number" name = "duration" placeholder = "Duration(mins)" required><br><br> <input type = "number" name = "year" placeholder="Year" required><br><br>
+        <input id='genre' type = "number" name = "genre" placeholder = "Genre" required><br><br>
+        <input id='director' type = "number" name = "director" placeholder="Director" required><br><br>
+        <input id='actor1' type = "number" name = "actor1" placeholder="Actor1" required><br><br>
+        <input id ='actor2' type = "number" name = "actor2" placeholder="Actor2" required><br><br>
+        <input id='movie_budget' type="number" name= "budget" placeholder="Movie Budget" required><br><br>
+
+        <input id='submit_button' type="submit">
+        </div>
+    </form>
+</body>
+</html>

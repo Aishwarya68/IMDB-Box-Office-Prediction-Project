@@ -1,0 +1,25 @@
+body{
+    background-image: url('images/Image1.jpg');
+}
+h1,h2{
+    color:white;
+    text-align: center;
+}
+button{
+     align-items: center;
+     padding: 10px;
+     border-radius: 20px;
+     border-color: black;
+     width:50%;
+     background-color: lightcoral;
+}
+button:hover{
+    background-color: lightpink;
+}
+div{
+    width:50%;
+    margin: auto;
+    position: relative;
+    left:150px;
+    right:250px;
+}
